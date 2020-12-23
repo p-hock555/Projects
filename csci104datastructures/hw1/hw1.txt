@@ -1,0 +1,61 @@
+1:
+Part (a)
+1. Looking up concepts relevant to the course online.
+4. Asking the course staff for help.
+8. Copying test cases from my classmates or Piazza when test cases are not graded.
+
+Part (b)
+2. emacs
+3. eclipse
+4. sublime
+5. Microsoft visual studio
+
+Part (c)
+4. Each student has 4 late days of which only 2 can be used per HW.
+
+Part (d)
+1. Use the normal submission system on the course website
+4. Start the next assignment sooner.
+
+Git Quiz:
+
+Part (a)
+3. Terminal (Mac or Linux)
+
+Part (b)
+1. git add hw1q2b.cpp
+2. git log
+
+Part (c)
+1. When we add files, this stages them or gets them ready to be committed.
+Once we add, we can commit, but we need to add -m "message" for the files to actually be saved locally.
+If we do not add a message, git will prompt the user for a message using the editor we configured.
+
+Rational Review:
+
+1. yes, if the left side of the operator is the class we are in, then we can do this.
+2. yes, we use the friend declaration when we want to access the data inside a class, but
+do not need it as a member function. For this, we need a left hand and right hand side still.
+3. no, we would need it to be either a friend function or a member function or else the program
+will not compile.
+
+Reversi Review:
+
+1. the ostream operator function needs to be a friend function, because it needs to access
+the private data members of the class.
+2. The board class.
+
+5.
+
+Part (a)
+1. Record
+
+Part (b)
+1. nothing
+
+Part (c)
+Wrapper::Wrapper(const Rational& major, const Rational& overall)
+{
+	r.major_ = major.majorGPA();
+	r.overall_ = overall.overallGPA();
+}

@@ -1,0 +1,56 @@
+Part (a)
+tracked and unmodified because Git just checked them out and you haven’t
+edited anything.
+
+Part (b)
+fun_problem.txt is untracked
+README.md is modified and not staged for commit
+
+Part (c)
+both of the files are now staged
+
+Part (d)
+both now modified
+
+Part (e)
+README.md is staged
+
+Part (f)
+README.md is not modified
+
+2. Abstract Data Types
+1. We can use a map to store the playlist and track number as the key value pair,
+and the song name(string) as the value for the key.
+2. A list where a string can be stored, and have the recipe for that step in
+that node of the list.
+3. A set where the key value would be the file extension and the value
+would be the possible programs that are able to read/open the file
+4. A map could be used where the key value is the TV identification station
+and the value could be the full name(string) of the station.
+
+3. runtime analysis
+
+1. The outer and inner loop will both run n iterations, but since n is subtracted
+by it's square every time we can say that both of the loops will run root n times.
+For example, if n is 16, the first iteration of a summation will be that it will run n
+times. Then 12 times, then 8 times, then 4 times, then the loop will not run because
+n will equal zero after that. If we have two for loops that run root n times, then that
+runtime will be equal to O(n).
+
+2. Since we are calculating worst case runtime, we can assume the if statement
+will evaluate as true every iteration. The inner for loop iterates n/2 times,
+since m is updated 2m times. The middle loop runs n times, and the outer loop
+runs n times, so Outer = n iterations, Middle = n iterations and inner = n/2 iterations.
+That runtime comes to be (n^3)/2 which is just O(n^3).
+
+3. The first for loop would run n times, because the insert member function
+for the map class runs in constant time. The next for loop runs in n times and the while
+loop inside of it will run in log(n) times, because k updates every iteration k/2 times.
+So since the program has a loop that runs n times then a log(n) loop inside of
+that the whole program will run in O(nlog(n)).
+
+4. The outer loop will run n times no matter what, because n gets updated 1 every iteration.
+The inside for loop will run (3/2)(size) times, which just iterates at a rate of size.
+However, the inner for loop will only run when i = size, and since size increases every time,
+when n is less than 10 that inner loop will never run, leaving the complexity at O(n). Since
+we are assuming the worst case, the loop will run O(n*size).

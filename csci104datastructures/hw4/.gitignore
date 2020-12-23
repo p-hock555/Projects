@@ -1,0 +1,44 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+	../list-recursion/llrec.o
+	../mergesort/msort-test
+	crawl
+	md_parser.o
+	txt_parser.o
+	util.o
+	mergesort/msort-test
+	search2/crawl
+	mergesort/msort-test
+	mergesort/.DS_Store
+	mergesort/msort-test
+	search2/.DS_Store
+	search2/crawl
