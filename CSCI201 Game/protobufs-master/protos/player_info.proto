@@ -1,0 +1,11 @@
+syntax = "proto3";
+package CS201Game;
+option java_package = "cs201game.protos";
+option java_outer_classname = "PlayerInfoProto";
+option csharp_namespace = "Protos";
+
+message PlayerInfo {
+  double x = 1;
+  double y = 2;
+  double rotation = 3;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+package CS201Game;
+option java_package = "cs201game.protos";
+option java_outer_classname = "LeaderboardProto";
+option csharp_namespace = "Protos";
+
+import "player_score.proto";
+
+message Leaderboard { repeated PlayerScore scores = 1; }

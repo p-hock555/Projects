@@ -1,0 +1,7 @@
+syntax = "proto3";
+package CS201Game;
+option java_package = "cs201game.protos";
+option java_outer_classname = "RegisterResponseProto";
+option csharp_namespace = "Protos";
+
+message RegisterResponse { uint32 status_code = 1; }

@@ -1,0 +1,15 @@
+version: 0.0
+os: linux
+files:
+  - source: ./game-backend-1.0-SNAPSHOT-jar-with-dependencies.jar
+    destination: /tmp
+  - source: ./pm2process.sh
+    destination: /tmp
+
+hooks:
+  BeforeInstall:
+    - location: install_dependencies.sh
+  ApplicationStart:
+    - location: run_app.sh
+  ApplicationStop:
+    - location: stop_app.sh

@@ -1,0 +1,10 @@
+**
+
+!*/
+
+!.gitignore
+.idea/*
+
+!*.java
+!*.cs
+!*.proto

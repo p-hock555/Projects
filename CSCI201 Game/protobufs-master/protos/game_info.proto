@@ -1,0 +1,9 @@
+syntax = "proto3";
+package CS201Game;
+option java_package = "cs201game.protos";
+option java_outer_classname = "GameInfoProto";
+option csharp_namespace = "Protos";
+
+import "player_info.proto";
+
+message GameInfo { repeated PlayerInfo players = 1; }

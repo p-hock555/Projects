@@ -1,0 +1,10 @@
+syntax = "proto3";
+package CS201Game;
+option java_package = "cs201game.protos";
+option java_outer_classname = "PlayerScoreProto";
+option csharp_namespace = "Protos";
+
+message PlayerScore {
+  string username = 1;
+  double score = 2;
+}

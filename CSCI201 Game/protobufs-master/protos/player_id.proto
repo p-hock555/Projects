@@ -1,0 +1,7 @@
+syntax = "proto3";
+package CS201Game;
+option java_package = "cs201game.protos";
+option java_outer_classname = "PlayerIDProto";
+option csharp_namespace = "Protos";
+
+message PlayerID { uint32 ID = 1; }
