@@ -259,8 +259,5 @@ def main_menu():
     pygame.quit()
 
 
-<<<<<<< HEAD
 main_menu()
-=======
-main_menu()
->>>>>>> bbb54a96a9944fb68fda9bd440eed5343e298278
+
