@@ -1,0 +1,51 @@
+			      EE 109  - Fall 2020
+		       Lab 3 - Arduino Input and Output
+
+Edit the document below to fill in your answers to the review problems at the
+end of the assignment web page.
+
+1. (2 points) Suppose we relocated the three buttons from group B, bits 5-3 to
+group D, bits 5-3, noting that the LED is still attached to group D, bit 2. Assuming appropriate DDRD values, consider the following method of turning on the LED.
+
+    PORTD = 0x04; // turn on the LED
+
+Explain the problem with this approach and, in particular, what would stop
+working after the execution of that line of code.
+
+
+We need the bitwise operations on the ports, because we want the rest of the bits to stay the same, while only changeing a select number of bits. If we were to use this method, we wouldn't have consistent outputs, because our other bits would change and we would have trouble changing those bits back. 
+
+
+
+2. (2 points) Suppose Tommy Trojan used an oscilloscope to measure the time from the instant a button was depressed to the instant the LED turned on. Tommy found that if he did the test several times the amount of delay was never the same but varied each time between 3 microseconds and 10 microseconds. Explain why the delays varied. Think about the timing of how software executes.
+
+The while loop is in an infinite loop. So, the while loop constantly checks that the argument is true before executing the next line of code. The button could be pressed at any moment in time, and it could be pressed when the CPU is processing another iteration of the while loop. The code needs to finish before another iteration can execute thus taking more time. 
+
+
+
+
+
+
+-------------------------------------------------------------------------------
+
+			   Operation of the Circuit
+
+Please record a video of you demonstrating the operation of the circuit
+that shows the output LED under these conditions:
+
+1. Output after the 'U' button pressed.
+
+2. Output after the 'S' button pressed.
+
+3. Output after the 'C' button pressed.
+
+4. Hold down the 'S' button for 10 seconds to show that there is a DASH length
+delay between successive S characters as specified in the description on the
+web page of the timing of Morse code characters.
+
+Paste link to lab demonstration video below:
+
+https://youtu.be/yXKwFwCsu7Q
+
+
+

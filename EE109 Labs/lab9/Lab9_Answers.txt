@@ -1,0 +1,48 @@
+			      EE 109  - Fall 2020
+			 Lab 9 - Serial Communications
+
+Edit the document below to fill in your answers to the review problems at the
+end of the assignment web page.
+
+
+1. (1 points) Briefly explain why a common GND signal is needed between
+transmitter and receiver devices.
+
+
+
+
+
+2. (2 points) The baud rate (e.g. 9600 bps) is the rate at which 1's and 0's
+are transmitted over the serial line.  Briefly explain why the data rate (rate
+at which useful data is transmitted/received) is less than the baud rate even
+with error-free transmission.
+
+
+
+
+
+
+-------------------------------------------------------------------------------
+
+			   Operation of the Circuit
+
+Please record a video of you demonstrating the operation of the circuit that
+shows the following aspects of the stopwatch operating.
+
+1.  Show the splash screen at the start that shows your name.
+
+2.  Up and Down buttons display list of at least 10 messages
+
+3.  Message list wraps around at top and bottom
+
+4.  Pressing the select button sends selected message
+
+5.  Incoming message correctly displayed on second line
+
+6.  You can transmit messages correctly to receiver on pin D11
+
+
+Paste link to lab demonstration video below:
+
+
+
